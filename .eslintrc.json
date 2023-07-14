@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "@primittive/eslint-config/react"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "react-hooks/exhaustive-deps": "off",
+    "prefer-regex-literals": "off",
+    "no-useless-constructor": "off",
+    "no-use-before-define": "off",
+    "react/no-unknown-property": "off"
+  }
+}
