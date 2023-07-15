@@ -91,9 +91,13 @@ module.exports = {
           900: '#121215',
         },
 
+        zinc: {
+          970: '#060607',
+        },
+
         brand: {
-          primary: '#00C900',
-          secondary: '#008C00',
+          primary: '#FC6A0F',
+          secondary: '#FC2681',
           gray: {
             300: '#EDEBEB',
             500: '#909090',
@@ -177,6 +181,7 @@ module.exports = {
       },
 
       fontSize: {
+        xxs: '.625rem',
         '5xl': '2.5rem',
       },
 

@@ -8,12 +8,14 @@ import { DotPulse } from '@/components/ui/layout/DotPulse'
 import { Logo } from '@/components/ui/layout/Logo'
 import { SearchBar } from '@/components/ui/tools/Search'
 import { Menu } from '@/components/ui/layout/Menu'
+import { Badge } from '@/components/ui/layout/Badge'
+import { Widget } from '@/components/ui/layout/Widget'
 
 export function Header() {
   return (
     <header
-      className="flex w-full items-center justify-between border-b
-    border-b-zinc-700 p-8 md:p-4 2xl:p-8"
+      className="fixed flex w-full max-w-11xl items-center justify-between border-b border-b-zinc-700
+    bg-zinc-970 p-8 md:p-4 2xl:p-8"
     >
       <div className="flex w-full items-center justify-between pl-3">
         <div className="flex w-max items-center justify-between gap-8">
@@ -39,7 +41,7 @@ export function Header() {
           </div>
         </div>
         <div className="flex max-h-12 w-max items-center justify-between gap-6 px-2">
-          <div className="border-r border-zinc-700 py-3 pr-4">
+          <div className="border-r border-zinc-700 py-[7px] pr-4">
             <SearchBar />
           </div>
           <div className="flex">
@@ -50,11 +52,13 @@ export function Header() {
             <MessageSquare className="h-5 w-5 text-zinc-50" />
             <DotPulse foreground="bg-blue-500" background="bg-blue-400" />
           </div>
-          <div className="flex">
-            <Bell className="h-5 w-5 text-zinc-50" />
-            <DotPulse foreground="bg-red-500" background="bg-red-400" />
-          </div>
-          <div className="border-l border-zinc-700 pl-4">
+          <Widget>
+            <button className="flex">
+              <Bell className="h-5 w-5 text-zinc-50" />
+              <DotPulse foreground="bg-red-500" background="bg-red-400" />
+            </button>
+          </Widget>
+          <div className="relative flex flex-col border-l border-zinc-700 pl-4">
             <UserButton
               afterSignOutUrl="/sign-in"
               showName
@@ -69,6 +73,18 @@ export function Header() {
                 },
               }}
             />
+            <div
+              className="absolute -bottom-2 right-14 mx-auto flex max-w-[12.5rem]
+              items-center justify-center gap-1 text-[.625rem] text-zinc-600"
+            >
+              Conta
+              <Badge
+                className="rounded-md bg-red-950 px-1 py-[.0625rem] text-[.625rem]
+                text-red-400"
+              >
+                PRO
+              </Badge>
+            </div>
           </div>
         </div>
       </div>

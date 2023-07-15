@@ -21,7 +21,7 @@ export default async function ModulesLayout({
     >
       <div
         className="mx-auto min-h-screen w-full max-w-11xl overflow-hidden
-       bg-zinc-950 shadow-lg shadow-zinc-100"
+       bg-zinc-50 shadow-lg shadow-zinc-100"
       >
         <Header />
         <main className="flex">{children}</main>
