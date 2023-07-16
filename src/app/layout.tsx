@@ -40,21 +40,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             'rounded-md border border-gray-100 hover:border-green-500 transition-colors duration-150 ease-linear focus:border-green-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
         },
         layout: {
-          helpPageUrl: 'https://clerk.dev/support',
-          // logoImageUrl: "https://clerk.dev/logo.png",
-          logoPlacement: 'none',
-          // privacyPageUrl: "https://clerk.dev/privacy",
           showOptionalFields: true,
           socialButtonsPlacement: 'top',
           socialButtonsVariant: 'auto',
-          // termsPageUrl: "https://clerk.dev/terms",
         },
       }}
     >
       <html lang="en" suppressHydrationWarning>
         <body
           className={`${inter.variable} ${roboto.variable} ${montserrat.variable} bg-skin-fill-base
-            font-sans text-skin-inverted selection:bg-orange-400`}
+            font-sans text-skin-inverted selection:bg-brand-secondary`}
         >
           <ReactQueryProvider>{children}</ReactQueryProvider>
         </body>

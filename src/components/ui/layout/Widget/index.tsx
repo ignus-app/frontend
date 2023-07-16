@@ -7,7 +7,7 @@ import {
   PopoverTrigger,
   PopoverArrow,
 } from '@/components/base/popover'
-import { ArrowRight, Check, Rocket, X } from 'lucide-react'
+import { ArrowRight, Check, Zap, X } from 'lucide-react'
 import { Notification } from '../Notification'
 
 export function Widget({ children }: { children: ReactNode }) {
@@ -31,7 +31,7 @@ export function Widget({ children }: { children: ReactNode }) {
           {/* Recipient */}
           <div className="divide-y-2 divide-zinc-950">
             <Notification.Root>
-              <Notification.Icon icon={Rocket} />
+              <Notification.Icon icon={Zap} />
               <Notification.Content text="Você recebeu uma nova mensagem do seu colaborador." />
               <Notification.Actions>
                 <Notification.Action onClick={() => {}} icon={X} />
@@ -44,7 +44,7 @@ export function Widget({ children }: { children: ReactNode }) {
             </Notification.Root>
 
             <Notification.Root>
-              <Notification.Icon icon={Rocket} />
+              <Notification.Icon icon={Zap} />
               <Notification.Content text="Você recebeu uma nova mensagem do seu colaborador." />
               <Notification.Actions>
                 <Notification.Action
@@ -65,7 +65,7 @@ export function Widget({ children }: { children: ReactNode }) {
           {/* Recipient */}
           <div className="divide-y-2 divide-zinc-950">
             <Notification.Root>
-              <Notification.Icon icon={Rocket} />
+              <Notification.Icon icon={Zap} />
               <Notification.Content text="Você recebeu uma nova mensagem do seu colaborador." />
             </Notification.Root>
 

@@ -35,8 +35,8 @@ export function Header() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect x="12" y="20" width="24" height="2" fill="#FC7004"></rect>
-              <rect x="20" y="26" width="16" height="2" fill="#FC7004"></rect>
+              <rect x="12" y="20" width="24" height="2" fill="#ffffff"></rect>
+              <rect x="20" y="26" width="16" height="2" fill="#ffffff"></rect>
             </svg>
           </div>
         </div>
