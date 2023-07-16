@@ -3,11 +3,10 @@ import { cn } from '@/lib/utils'
 import { ReactNode } from 'react'
 
 interface BadgeStatusProps {
-  status?: 'Online' | 'Offline' | 'Sem Geração' | 'Não Monitorada'
   children: ReactNode
 }
 
-export function BadgeStatus({ status, children }: BadgeStatusProps) {
+export function BadgeStatus({ children }: BadgeStatusProps) {
   return (
     <Badge
       className={cn(`flex gap-2 text-sm`, {
@@ -17,7 +16,6 @@ export function BadgeStatus({ status, children }: BadgeStatusProps) {
         'bg-zinc-700/30 text-zinc-200': children === 'Não Monitorada',
       })}
     >
-      {/* {status} */}
       {children}
     </Badge>
   )
