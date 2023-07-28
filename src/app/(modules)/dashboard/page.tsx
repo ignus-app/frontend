@@ -19,7 +19,10 @@ export default function Dashboard() {
                 <span className="border-r border-zinc-700 pr-6 text-xl font-bold">
                   Projetos
                 </span>
-                <button className="flex items-center gap-2 rounded-2xl bg-blue-700/30 px-2.5 py-1 text-sm text-blue-200">
+                <button
+                  className="flex items-center gap-2 rounded-2xl bg-blue-700/30
+                  px-2.5 py-1 text-sm text-blue-200"
+                >
                   Compartilhar
                   <Link2 className="h-4 w-4 text-blue-200" />
                 </button>
