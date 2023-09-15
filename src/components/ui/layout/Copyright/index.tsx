@@ -9,7 +9,7 @@ export function Copyright() {
         className="transitions-colors underline delay-150 ease-linear
         hover:text-gray-50"
       >
-        Ecovolts
+        Ignus
       </a>
     </footer>
   )

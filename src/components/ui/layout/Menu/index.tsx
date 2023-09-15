@@ -14,7 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/base/navigation-menu'
 
-import ecovolts from '@/assets/logo.svg'
+import ignus from '@/assets/black-flame-logo.svg'
 import Image from 'next/image'
 
 const feedback: { title: string; href: string; description: string }[] = [
@@ -66,18 +66,14 @@ export function Menu() {
               <li className="row-span-3">
                 <NavigationMenuLink className="bg-zinc-500" asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-black to-zinc-950 py-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <Image
-                      src={ecovolts}
-                      alt="Ecovolts"
-                      className="h-12 w-12"
-                    />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Ecovolts.
+                    <Image src={ignus} alt="Ignus" className="h-16 w-16" />
+                    <div className="mb-2 mt-4 pl-4 text-lg font-medium text-zinc-50">
+                      Ignus.
                     </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
+                    <p className="ml-4 text-sm leading-tight text-muted-foreground">
                       Solar Energy Manager Project
                     </p>
                   </a>

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logo from '@/assets/logo-mixGray.svg'
+import logo from '@/assets/ignus-bigflame-traditional-login.svg'
 import { Underline } from '../SVGElements/Underline'
 import { HeroPattern } from '../SVGElements/HeroPattern'
 import { Button } from '@/components/ui/layout/Button'
@@ -11,11 +11,7 @@ export function Hero() {
     <>
       <div className="relative z-10 space-y-5">
         <figure>
-          <Image
-            src={logo}
-            className="h-[3.125rem] w-[3.125rem] laptop:h-[7.5rem] laptop:w-[7.5rem] desktop:h-[7.5rem] desktop:w-[7.5rem]"
-            alt="Ecovolts"
-          />
+          <Image src={logo} className="" alt="Ecovolts" />
         </figure>
 
         <article
@@ -26,7 +22,7 @@ export function Hero() {
             Líder no mercado de Energia Solar
           </h1>
           <p className="text-lg leading-relaxed">
-            Junte-se a Ecovolts e esteja na vanguarda do setor de energia solar,
+            Junte-se a Ignus e esteja na vanguarda do setor de energia solar,
             energia limpa e renovável através das{' '}
             <span className="relative">
               Placas Fotovoltaicas.
